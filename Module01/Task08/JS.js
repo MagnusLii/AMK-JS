@@ -12,10 +12,10 @@ for (let i = startyear; i < endyear; i++) {
   }
 }
 
-const list = document.getElementById('print');
+const list = document.getElementById('print'); // Creates 'list' variable that is connected to element in HTML doc via 'print' ID.
 
 for (const elem of leapyear) {
-  const listelemt = document.createElement('li');
-  listelemt.innerHTML = elem;
-  list.append(listelemt);
+  const listelemt = document.createElement('li'); // Creates empty 'li' (list) elem into HTML under 'print' ID.
+  listelemt.innerHTML = elem;   // Fetches the current item from the 'leapyear' list/array
+  list.append(listelemt); // Appends the current item into the previously created 'li' element.
 }
