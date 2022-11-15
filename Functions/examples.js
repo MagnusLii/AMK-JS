@@ -63,6 +63,9 @@ function rollDice(sides) {
 console.log(rollDice(19));
 
 function playDieGame(sides){
+  try {
+    s
+  }
   const resultsElem = document.getElementById('results');
   const ulElem = document.createElement('ul');
   resultsElem.append(ulElem);
