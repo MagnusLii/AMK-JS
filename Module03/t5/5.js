@@ -92,4 +92,20 @@ const picArray = [
   },
 ];
 
-// add your code here
+for (let i = 0; i<picArray.length; i++){
+  const article = document.createElement('article');
+  const h2 = document.createElement('h2');
+  const figure = document.createElement('figure');
+  const img = document.createElement('img');
+  const figcaption = document.createElement('figcaption');
+  const p = document.createElement('p');
+  article.append(h2, figure, p)
+  article.classList.add('card')
+  h2.innerHTML = picArray[i].title
+  figure.append(img, figcaption)
+  img.src = picArray[i].image.large
+  img.alt = picArray[i].title
+  figcaption.textContent = picArray[i].caption
+  p.textContent = picArray[i].description
+  document.querySelector('#pictures').append(article)
+}
