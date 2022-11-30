@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 // Step 1
 fetch('https://api.tvmaze.com/search/shows?q=breaking').
     then((response) => response.json()).
@@ -34,11 +34,10 @@ async function fnc() {
     mainDivElem.append(divElement);
 }
 
-fnc();
-*/
+//fnc();
+
 
 // Step 3
-const mainDivElem = document.querySelector('#shows');
 
 async function fnc2() {
   // For testing no cover img.
